@@ -34,7 +34,7 @@
         <span id="score" class="current-score">0</span>
       </div>
     </header>
-
+<!-- game display -->
     <main id="main">
       <div class="row top-row">
         <button id="paper" class="coin coin-paper">
@@ -56,9 +56,9 @@
         </button>
       </div>
     </main>
-
+<!-- result display -->
     <div id="result" class="row top-row result">
-      <button id="playerResult" class="coin coin-paper">
+      <button id="playerResult" class="coin coin-paper glow">
           <div class="coin-background">
               <img class="coin-img" src="images/icon-paper.svg" alt="icon-paper" >
           </div>
@@ -68,9 +68,9 @@
               <img class="coin-img" src="images/icon-scissors.svg" alt="icon-scissors" >
           </div>
       </button>
-      <div class="result-who flex">
-        <p>You Picked</p>
-        <p>The House picked</p>
+      <div class="result-picked flex">
+        <p class="You-Picked">You Picked</p>
+        <p class="House-Picked">The House picked</p>
       </div>
       <div id ="message-section" class="message-section">
         <p  id="message" class="message"></p>
