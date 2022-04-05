@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="modal">
+    <h2 class="rules-title current-score">Rules</h2>
+    <img src="images/image-rules.svg" alt="rules image">
+    <button id="close-modal" class="btn-close">
+      <img src="images/icon-close.svg" alt="close icon">
+    </button>
+  </div>
+    
+  <div class="container flex">
+  
+    <header class="flex">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <div class="score">
+        <h2 class="score-title">Score</h2>
+        <span id="score" class="current-score">0</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="row top-row">
+        <button id="paper" class="coin coin-paper">
+            <div class="coin-background">
+                <img class="coin-img" src="images/icon-paper.svg" alt="icon-paper" >
+            </div>
+        </button>
+        <button id="scissors" class="coin coin-scissors">
+            <div class="coin-background">
+                <img class="coin-img" src="images/icon-scissors.svg" alt="icon-scissors" >
+            </div>
+        </button>
+      </div>
+      <div class="row bottom-row">
+        <button id="rock" class="coin coin-rock">
+            <div class="coin-background">
+                <img class="coin-img" src="images/icon-rock.svg" alt="icon-rock" >
+            </div>
+        </button>
+      </div>
+    </main>
+
+    <div id="result" class="row top-row result">
+      <button id="playerResult" class="coin coin-paper">
+          <div class="coin-background">
+              <img class="coin-img" src="images/icon-paper.svg" alt="icon-paper" >
+          </div>
+      </button>
+      <button id="computerResult" class="coin">
+          <div class="coin-background">
+              <img class="coin-img" src="images/icon-scissors.svg" alt="icon-scissors" >
+          </div>
+      </button>
+      <div class="result-who flex">
+        <p>You Picked</p>
+        <p>The House picked</p>
+      </div>
+      <div id ="message-section" class="message-section">
+        <p  id="message" class="message"></p>
+        <button id="play-again" class="btn-play-again">Play Again</button>
+      </div>
+    </div>
+    
+    
+    <footer>
+      <button id="open-modal" class="btn-rules">Rules</button>
+      <button id="reset-score" class="btn-rules">reset score</button>
+    </footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/NicoPom" target="_blank">Nico Pom</a>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
